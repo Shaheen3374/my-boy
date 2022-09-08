@@ -1648,7 +1648,7 @@ class Speedtest(object):
         cons_thread = threading.Thread(target=consumer,
                                        args=(q, request_count))
         start = timeit.default_timer()
-        prod_thread.start()
+        prod_thread.start() Shaheen 
         cons_thread.start()
         _is_alive = thread_is_alive
         while _is_alive(prod_thread):
